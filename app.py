@@ -8,14 +8,14 @@ from io import BytesIO
 
 st.set_page_config(page_title="Automação de Relatórios SAP", layout="centered")
 
-st.title("📊 Gerador de Relatórios por Filial")
-st.markdown("Suba o arquivo consolidado do SAC e receba os 24 relatórios formatados em um arquivo ZIP.")
+st.title("📊 ITENS SEM GIRO > 90 DIAS")
+st.markdown("Suba o arquivo consolidado do SAC e receba os relatórios das filiais formatados em um arquivo ZIP.")
 
 uploaded_file = st.file_uploader("Escolha o arquivo Excel (.xlsx)", type="xlsx")
 
 if uploaded_file:
     if st.button("Processar e Gerar Relatórios"):
-        with st.spinner('Processando filiais...'):
+        with st.spinner('Processando relatórios...'):
             # Limpeza de pastas temporárias
             pasta_saida = 'temp_relatorios'
             if os.path.exists(pasta_saida): shutil.rmtree(pasta_saida)
