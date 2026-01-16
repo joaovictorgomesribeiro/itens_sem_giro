@@ -6,7 +6,7 @@ import os
 import shutil
 from io import BytesIO
 
-st.set_page_config(page_title="Automação de Relatórios SAP", layout="centered")
+st.set_page_config(page_title="ITENS SEM GIRO", layout="centered")
 
 st.title("📊 ITENS SEM GIRO > 90 DIAS")
 st.markdown("Suba o arquivo consolidado do SAC e receba os relatórios das filiais formatados em um arquivo ZIP.")
